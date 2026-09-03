@@ -1,0 +1,46 @@
+name: '✨Feature'
+description: '새로운 기능 추가'
+title: '[Feature] '
+labels: ['feature']
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 기능 요약
+      placeholder: 예) ??? 기능 추가
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 배경 / 문제 상황
+      description: 왜 이 기능이 필요한지 작성해주세요.
+      placeholder: |
+        예)
+        - 현재 ???가 필요합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 해결 방법
+      description: 어떻게 해결할 것인지 작성해주세요.
+      placeholder: |
+        예)
+        - ???을 추가합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: 관련 문서, 이슈, PR, 화면 링크 등을 작성해주세요.
+      placeholder: |
+        - 관련 PR:
+        - 관련 문서:
+        - 참고 링크:
+    validations:
+      required: false
